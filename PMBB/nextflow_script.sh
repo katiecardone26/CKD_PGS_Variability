@@ -1,10 +1,8 @@
 # load modules
 module purge
 module load nextflow/24.04.3 singularity jdk/11.0.5
-
 # test pipeline
 nextflow run pgscatalog/pgsc_calc -profile test,singularity -c lpc_nextflow.config
-
 # run pipeline with v2 data
 nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --input input/PMBB_v2.CKD.PGSC_CALC.samplesheet.csv \
@@ -19,7 +17,6 @@ nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --keep_multiallelic True \
 --hwe_ref 0 \
 --pca_maf_target 0.05
-
 # run pipeline with v3 data
 nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --input input/PMBB_v3.CKD.PGSC_CALC.samplesheet.csv \
@@ -34,7 +31,6 @@ nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --keep_multiallelic True \
 --hwe_ref 0 \
 --pca_maf_target 0.05
-
 # AFR eGFR PRScs iterations
 nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config --with-trace \
 --input input/PMBB_v2.CKD.PRScs_iterations.PGSC_CALC.samplesheet.csv \
@@ -49,7 +45,6 @@ nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config --
 --keep_multiallelic True \
 --hwe_ref 0 \
 --pca_maf_target 0.05
-
 # AFR eGFR flip PRScs iterations
 nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --input input/PMBB_v2.CKD.PRScs_iterations.PGSC_CALC.samplesheet.csv \
@@ -64,7 +59,6 @@ nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --keep_multiallelic True \
 --hwe_ref 0 \
 --pca_maf_target 0.05
-
 # AFR Phe PRScs iterations
 nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --input input/PMBB_v2.CKD.PRScs_iterations.PGSC_CALC.samplesheet.csv \
@@ -79,7 +73,6 @@ nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --keep_multiallelic True \
 --hwe_ref 0 \
 --pca_maf_target 0.05
-
 # AMR eGFR PRScs iterations
 nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --input input/PMBB_v2.CKD.PRScs_iterations.PGSC_CALC.samplesheet.csv \
@@ -94,7 +87,6 @@ nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --keep_multiallelic True \
 --hwe_ref 0 \
 --pca_maf_target 0.05
-
 # AMR eGFR flip PRScs iterations
 nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --input input/PMBB_v2.CKD.PRScs_iterations.PGSC_CALC.samplesheet.csv \
@@ -109,7 +101,6 @@ nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --keep_multiallelic True \
 --hwe_ref 0 \
 --pca_maf_target 0.05
-
 # EAS eGFR PRScs iterations
 nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --input input/PMBB_v2.CKD.PRScs_iterations.PGSC_CALC.samplesheet.csv \
@@ -124,7 +115,6 @@ nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --keep_multiallelic True \
 --hwe_ref 0 \
 --pca_maf_target 0.05
-
 # EAS eGFR flip PRScs iterations
 nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --input input/PMBB_v2.CKD.PRScs_iterations.PGSC_CALC.samplesheet.csv \
@@ -139,7 +129,6 @@ nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --keep_multiallelic True \
 --hwe_ref 0 \
 --pca_maf_target 0.05
-
 # EAS Phe PRScs iterations
 nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --input input/PMBB_v2.CKD.PRScs_iterations.PGSC_CALC.samplesheet.csv \
@@ -154,7 +143,6 @@ nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --keep_multiallelic True \
 --hwe_ref 0 \
 --pca_maf_target 0.05
-
 # EUR eGFR PRScs iterations
 nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --input input/PMBB_v2.CKD.PRScs_iterations.PGSC_CALC.samplesheet.csv \
@@ -169,7 +157,6 @@ nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --keep_multiallelic True \
 --hwe_ref 0 \
 --pca_maf_target 0.05
-
 # EUR eGFR flip PRScs iterations
 nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --input input/PMBB_v2.CKD.PRScs_iterations.PGSC_CALC.samplesheet.csv \
@@ -184,7 +171,6 @@ nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --keep_multiallelic True \
 --hwe_ref 0 \
 --pca_maf_target 0.05
-
 # EUR Phe PRScs iterations
 nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config --with-trace \
 --input input/PMBB_v2.CKD.PRScs_iterations.PGSC_CALC.samplesheet.csv \
@@ -199,7 +185,6 @@ nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config --
 --keep_multiallelic True \
 --hwe_ref 0 \
 --pca_maf_target 0.05
-
 # META eGFR PRScsx iterations - first 200
 nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --input input/PMBB_v2.CKD.PRScs_iterations.PGSC_CALC.samplesheet.csv \
@@ -214,7 +199,6 @@ nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --keep_multiallelic True \
 --hwe_ref 0 \
 --pca_maf_target 0.05
-
 # META eGFR PRScsx iterations - second 200
 nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --input input/PMBB_v2.CKD.PRScs_iterations.PGSC_CALC.samplesheet.csv \
@@ -229,7 +213,6 @@ nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --keep_multiallelic True \
 --hwe_ref 0 \
 --pca_maf_target 0.05
-
 # META eGFR flip PRScsx iterations- first 200
 nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --input input/PMBB_v2.CKD.PRScs_iterations.PGSC_CALC.samplesheet.csv \
@@ -244,7 +227,6 @@ nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --keep_multiallelic True \
 --hwe_ref 0 \
 --pca_maf_target 0.05
-
 # META eGFR flip PRScsx iterations- second 200
 nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --input input/PMBB_v2.CKD.PRScs_iterations.PGSC_CALC.samplesheet.csv \
@@ -259,7 +241,6 @@ nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --keep_multiallelic True \
 --hwe_ref 0 \
 --pca_maf_target 0.05
-
 # META Phe PRScsx iterations- first 200
 nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --input input/PMBB_v2.CKD.PRScs_iterations.PGSC_CALC.samplesheet.csv \
@@ -274,7 +255,6 @@ nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --keep_multiallelic True \
 --hwe_ref 0 \
 --pca_maf_target 0.05
-
 # META Phe PRScsx iterations- second 200
 nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --input input/PMBB_v2.CKD.PRScs_iterations.PGSC_CALC.samplesheet.csv \
@@ -289,7 +269,6 @@ nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --keep_multiallelic True \
 --hwe_ref 0 \
 --pca_maf_target 0.05
-
 # AFR eGFR PRScs iterations- PMBBv3
 nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config --with-trace \
 --input input/PMBB_v3.CKD.PRScs_iterations.PGSC_CALC.samplesheet.csv \
@@ -304,7 +283,6 @@ nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config --
 --keep_multiallelic True \
 --hwe_ref 0 \
 --pca_maf_target 0.05
-
 # AFR eGFR flip PRScs iterations- PMBBv3
 nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --input input/PMBB_v3.CKD.PRScs_iterations.PGSC_CALC.samplesheet.csv \
@@ -319,7 +297,6 @@ nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --keep_multiallelic True \
 --hwe_ref 0 \
 --pca_maf_target 0.05
-
 # AFR Phe PRScs iterations- PMBBv3
 nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --input input/PMBB_v3.CKD.PRScs_iterations.PGSC_CALC.samplesheet.csv \
@@ -334,7 +311,6 @@ nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --keep_multiallelic True \
 --hwe_ref 0 \
 --pca_maf_target 0.05
-
 # AMR eGFR PRScs iterations- PMBBv3
 nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --input input/PMBB_v3.CKD.PRScs_iterations.PGSC_CALC.samplesheet.csv \
@@ -349,7 +325,6 @@ nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --keep_multiallelic True \
 --hwe_ref 0 \
 --pca_maf_target 0.05
-
 # AMR eGFR flip PRScs iterations- PMBBv3
 nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --input input/PMBB_v3.CKD.PRScs_iterations.PGSC_CALC.samplesheet.csv \
@@ -364,7 +339,6 @@ nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --keep_multiallelic True \
 --hwe_ref 0 \
 --pca_maf_target 0.05
-
 # EAS eGFR PRScs iterations- PMBBv3
 nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --input input/PMBB_v3.CKD.PRScs_iterations.PGSC_CALC.samplesheet.csv \
@@ -379,7 +353,6 @@ nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --keep_multiallelic True \
 --hwe_ref 0 \
 --pca_maf_target 0.05
-
 # EAS eGFR flip PRScs iterations- PMBBv3
 nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --input input/PMBB_v3.CKD.PRScs_iterations.PGSC_CALC.samplesheet.csv \
@@ -394,7 +367,6 @@ nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --keep_multiallelic True \
 --hwe_ref 0 \
 --pca_maf_target 0.05
-
 # EAS Phe PRScs iterations- PMBBv3
 nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --input input/PMBB_v3.CKD.PRScs_iterations.PGSC_CALC.samplesheet.csv \
@@ -409,7 +381,6 @@ nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --keep_multiallelic True \
 --hwe_ref 0 \
 --pca_maf_target 0.05
-
 # EUR eGFR PRScs iterations- PMBBv3
 nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --input input/PMBB_v3.CKD.PRScs_iterations.PGSC_CALC.samplesheet.csv \
@@ -424,7 +395,6 @@ nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --keep_multiallelic True \
 --hwe_ref 0 \
 --pca_maf_target 0.05
-
 # EUR eGFR flip PRScs iterations- PMBBv3
 nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --input input/PMBB_v3.CKD.PRScs_iterations.PGSC_CALC.samplesheet.csv \
@@ -439,7 +409,6 @@ nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --keep_multiallelic True \
 --hwe_ref 0 \
 --pca_maf_target 0.05
-
 # EUR Phe PRScs iterations- PMBBv3
 nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config --with-trace \
 --input input/PMBB_v3.CKD.PRScs_iterations.PGSC_CALC.samplesheet.csv \
@@ -454,7 +423,6 @@ nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config --
 --keep_multiallelic True \
 --hwe_ref 0 \
 --pca_maf_target 0.05
-
 # META eGFR PRScsx iterations - first 200- PMBBv3
 nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --input input/PMBB_v3.CKD.PRScs_iterations.PGSC_CALC.samplesheet.csv \
@@ -469,7 +437,6 @@ nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --keep_multiallelic True \
 --hwe_ref 0 \
 --pca_maf_target 0.05
-
 # META eGFR PRScsx iterations - second 200- PMBBv3
 nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --input input/PMBB_v3.CKD.PRScs_iterations.PGSC_CALC.samplesheet.csv \
@@ -484,7 +451,6 @@ nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --keep_multiallelic True \
 --hwe_ref 0 \
 --pca_maf_target 0.05
-
 # META eGFR flip PRScsx iterations- first 200- PMBB v3
 nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --input input/PMBB_v3.CKD.PRScs_iterations.PGSC_CALC.samplesheet.csv \
@@ -499,7 +465,6 @@ nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --keep_multiallelic True \
 --hwe_ref 0 \
 --pca_maf_target 0.05
-
 # META eGFR flip PRScsx iterations- second 200- PMBBv3
 nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --input input/PMBB_v3.CKD.PRScs_iterations.PGSC_CALC.samplesheet.csv \
@@ -514,7 +479,6 @@ nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --keep_multiallelic True \
 --hwe_ref 0 \
 --pca_maf_target 0.05
-
 # META Phe PRScsx iterations- first 200- PMBBv3
 nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --input input/PMBB_v3.CKD.PRScs_iterations.PGSC_CALC.samplesheet.csv \
@@ -529,7 +493,6 @@ nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --keep_multiallelic True \
 --hwe_ref 0 \
 --pca_maf_target 0.05
-
 # META Phe PRScsx iterations- second 200- PMBB v3
 nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --input input/PMBB_v3.CKD.PRScs_iterations.PGSC_CALC.samplesheet.csv \
@@ -543,8 +506,5 @@ nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --run_ancestry scripts/pgsc_HGDP+1kGP_v1.tar.zst \
 --keep_multiallelic True \
 --hwe_ref 0 \
-<<<<<<< HEAD
 --pca_maf_target 0.05
-=======
 --pca_maf_target 0.05
->>>>>>> fde8507 (add clinical covaraites to PMBB analyses)
