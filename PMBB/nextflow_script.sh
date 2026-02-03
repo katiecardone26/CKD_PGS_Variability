@@ -543,4 +543,8 @@ nextflow run pgscatalog/pgsc_calc -profile singularity -c lpc_nextflow.config \
 --run_ancestry scripts/pgsc_HGDP+1kGP_v1.tar.zst \
 --keep_multiallelic True \
 --hwe_ref 0 \
+<<<<<<< HEAD
 --pca_maf_target 0.05
+=======
+--pca_maf_target 0.05
+>>>>>>> fde8507 (add clinical covaraites to PMBB analyses)

@@ -9,4 +9,8 @@ touch ../none_remaining_plink.txt
 while IFS= read -r filename;
 do
 head -n109 $filename | tail -n1 | sed 's/  --out //g' >> ../none_remaining_plink.txt
+<<<<<<< HEAD
 done < ../none_remaining_out.txt
+=======
+done < ../none_remaining_out.txt
+>>>>>>> fde8507 (add clinical covaraites to PMBB analyses)

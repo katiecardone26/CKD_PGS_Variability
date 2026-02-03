@@ -61,4 +61,8 @@
 
 ######################################################################
 
+<<<<<<< HEAD
 wget https://ftp.ebi.ac.uk/pub/databases/spot/pgs/resources/pgsc_HGDP+1kGP_v1.tar.zst
+=======
+wget https://ftp.ebi.ac.uk/pub/databases/spot/pgs/resources/pgsc_HGDP+1kGP_v1.tar.zst
+>>>>>>> fde8507 (add clinical covaraites to PMBB analyses)

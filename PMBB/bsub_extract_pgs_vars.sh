@@ -77,4 +77,8 @@ plink2 --pfile ${plink2_prefix} \
 --set-all-var-ids @:#:\$r:\$a \
 --new-id-max-allele-len 1000 \
 --make-pgen \
+<<<<<<< HEAD
 --out input/PMBB_v3_extract/chunked_files/PMBB-Release-2024-3.0_genetic_imputed.${chrid}_chunk${chunk}_${start_pos}_${stop_pos}.ckd_pgs_weights_vars
+=======
+--out input/PMBB_v3_extract/chunked_files/PMBB-Release-2024-3.0_genetic_imputed.${chrid}_chunk${chunk}_${start_pos}_${stop_pos}.ckd_pgs_weights_vars
+>>>>>>> fde8507 (add clinical covaraites to PMBB analyses)

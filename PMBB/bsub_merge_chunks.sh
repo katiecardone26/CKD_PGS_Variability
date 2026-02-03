@@ -80,4 +80,8 @@ wc -l merge_lists/filtered/${chr_num}.merge_list.txt
 # plink command
 plink2 --pmerge-list merge_lists/filtered/${chr_num}.merge_list.txt \
 --make-pgen \
+<<<<<<< HEAD
 --out input/PMBB_v3_extract/chr_separated_files/PMBB-Release-2024-3.0_genetic_imputed.ckd_pgs_weights_vars.${chr_num}
+=======
+--out input/PMBB_v3_extract/chr_separated_files/PMBB-Release-2024-3.0_genetic_imputed.ckd_pgs_weights_vars.${chr_num}
+>>>>>>> fde8507 (add clinical covaraites to PMBB analyses)
